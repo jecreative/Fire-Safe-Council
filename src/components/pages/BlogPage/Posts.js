@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PostItem from './PostItem';
-import Spinner from '../../layout/Spinner';
+import Spinner from '../../layout/Spinner/Spinner';
 import PropTypes from 'prop-types';
 import { getPosts } from '../../../actions/postActions';
 

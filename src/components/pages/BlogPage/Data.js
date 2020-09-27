@@ -6,6 +6,7 @@ export const blogObjOne = {
   headline: 'News & Events',
   description:
     'One of forty-one local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires',
+  link: '/',
   buttonLabel: 'Get Started',
   imgStart: '',
   img: 'fsc-images/fsc-svg7.png',
@@ -21,6 +22,7 @@ export const blogObjTwo = {
     'California’s leader in community wildfire risk reduction and resiliency.',
   description:
     'When it comes to wildfire, no single person alone can protect a community. Residents throughout California are joining forces to create local Fire Safe Councils to effectively reduce and prevent wildfire losses.',
+  link: '/',
   buttonLabel: 'Start Now',
   imgStart: 'start',
   img: 'fsc-images/fsc-svg10.png',

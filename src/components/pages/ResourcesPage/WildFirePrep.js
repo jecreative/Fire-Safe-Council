@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
-import ResourcesSection from '../../layout/ResourcesSection';
-import PreparednessHeroSection from '../../layout/PreparednessHero';
-import Preparedness from '../../layout/Preparedness';
+import PreparednessHeroSection from './PreparednessHero';
+import Preparedness from './Preparedness';
 import { prepObjOne, prepObjTwo } from './Data';
 
 function WildFirePrep() {

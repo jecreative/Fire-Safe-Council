@@ -1,60 +1,46 @@
-import React, { Fragment } from 'react';
-
 // Resources Page
 export const resourcesObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Preparing For Wildfire',
-  headline: 'Stay protected with our prepardness resources',
+  topLine: 'Community Resources',
+  headline: 'Resources to help you prepare',
   description:
-    'A number of resources to help you prepare your family and your home for the risk of wildfire. Here you will find valuable information about what to do before, during, and after a wildfire emergency',
+    'Here you will find valuable information about what to do before, during, and after a wildfire emergency.',
   buttonLabel: 'Learn More',
   imgStart: '',
-  img: 'images/svg-5.svg',
-  alt: 'Vault',
-  link: '/wildfire-prepardness',
+  img: 'fsc-images/fsc-svg6.png',
+  alt: 'Fire Safe Resources',
+  link: '/preparing-for-wildfire',
 };
 
 export const resourcesObjTwo = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'Exclusive Access',
-  headline: 'Unlimited Transactions with zero fees',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Today's Fire Weather",
+  headline: "Stay informed with SDG&E's Fire Weather System",
   description:
     'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+  link: 'https://www.sdgeweather.com/',
   buttonLabel: 'Get Started',
-  imgStart: '',
-  img: 'images/svg-1.svg',
+  imgStart: 'start',
+  img: 'fsc-images/fsc-svg3.png',
   alt: 'Fire Safe Resources',
 };
 
 export const resourcesObjThree = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'EASY SETUP',
-  headline: 'Super fast and simple onboarding process',
-  description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-  buttonLabel: 'Start Now',
-  imgStart: 'start',
-  img: 'images/svg-7.svg',
-  alt: 'Fire Safe Resources',
-};
-
-export const resourcesObjFour = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'DATA ANALYTICS',
-  headline: 'Every transaction is stored on our secure cloud database',
+  topLine: 'Current Active Fires',
+  headline: 'CAL Fire Active Fire Incident Database',
   description:
-    'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
-  buttonLabel: 'Sign Up Now',
-  imgStart: 'start',
-  img: 'images/svg-8.svg',
+    'The California Department of Forestry and Fire Protection (CAL FIRE) responds to all types of emergencies. When the Department responds to a major CAL FIRE jurisdiction incident, the Department will post incident details to their web site.',
+  link: 'https://www.fire.ca.gov/incidents/',
+  buttonLabel: 'Start Now',
+  imgStart: '',
+  img: 'fsc-images/fsc-svg4.png',
   alt: 'Fire Safe Resources',
 };
 
@@ -71,7 +57,7 @@ export const prepObjOne = {
   imgStart: '',
   img: 'fsc-images/fsc-svg2.png',
   alt: 'Fire Safe Resources',
-  link: '/wildfire-prepardness',
+  link: '/preparing-for-wildfire',
 };
 
 export const prepObjTwo = {

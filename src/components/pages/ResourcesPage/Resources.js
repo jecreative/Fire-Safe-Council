@@ -1,15 +1,13 @@
 import React, { Fragment } from 'react';
-import ResourcesSection from '../../layout/ResourcesSection';
+import PreparednessHeroSection from './PreparednessHero';
 import { resourcesObjOne, resourcesObjTwo, resourcesObjThree } from './Data';
-import Pricing from '../../layout/Pricing';
 
 function Resources() {
   return (
     <Fragment>
-      <ResourcesSection {...resourcesObjOne} />
-      <Pricing />
-      <ResourcesSection {...resourcesObjTwo} />
-      <ResourcesSection {...resourcesObjThree} />
+      <PreparednessHeroSection {...resourcesObjOne} />
+      <PreparednessHeroSection {...resourcesObjTwo} />
+      <PreparednessHeroSection {...resourcesObjThree} />
     </Fragment>
   );
 }

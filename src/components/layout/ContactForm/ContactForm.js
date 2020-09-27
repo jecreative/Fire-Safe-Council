@@ -1,9 +1,15 @@
-import React, { Fragment } from 'react';
-import { Button } from './Button';
+import React, { Fragment, useState } from 'react';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './ContactForm.css';
 
-function ContactForm({
+// const encode = (data) => {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&');
+// };
+
+const ContactForm = ({
   lightBg,
   topLine,
   lightText,
@@ -14,7 +20,33 @@ function ContactForm({
   img,
   alt,
   imgStart,
-}) {
+}) => {
+  // const [contact, setContact] = useState(
+  //   {
+  //     name: '',
+  //     email: '',
+  //     message: '',
+  //   },
+  //   []
+  // );
+
+  // // Post the form submission
+  // const handleSubmit = (e) => {
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'contact', contact }),
+  //   })
+  //     .then(() => alert('Success!'))
+  //     .catch((error) => alert(error));
+
+  //   e.preventDefault();
+  // };
+
+  // const handleChange = (e) => setContact({ [e.target.name]: e.target.value });
+
+  // const { name, email, message } = contact;
+
   return (
     <Fragment>
       <div
@@ -44,38 +76,48 @@ function ContactForm({
                   {description}
                 </p>
                 <div className="form-container">
-                  <form action="#!">
+                  <form
+                    name="contact"
+                    method="post"
+                    action="https://focused-thompson-e2eee5.netlify.app/"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="form-group">
                       <input
                         type="text"
                         name="name"
-                        value="name"
                         placeholder="Name"
+                        required
                       />
                     </div>
                     <div className="form-group">
                       <input
                         type="email"
                         name="email"
-                        value="email"
                         placeholder="Email"
+                        required
                       />
                     </div>
                     <div className="form-group">
                       <textarea
                         type="message"
                         name="message"
-                        value="message"
                         placeholder="Message"
+                        cols="1"
+                        rows="5"
+                        required
                       />
                     </div>
+
+                    <Button
+                      type="submit"
+                      buttonSize="btn--wide"
+                      buttonColor="green"
+                    >
+                      {buttonLabel}
+                    </Button>
                   </form>
                 </div>
-                <Link to="/sign-up">
-                  <Button buttonSize="btn--wide" buttonColor="green">
-                    {buttonLabel}
-                  </Button>
-                </Link>
               </div>
             </div>
             <div className="col">
@@ -88,6 +130,6 @@ function ContactForm({
       </div>
     </Fragment>
   );
-}
+};
 
 export default ContactForm;

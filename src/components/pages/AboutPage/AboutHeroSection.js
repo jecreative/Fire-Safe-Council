@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { Button } from './Button';
+import { Button } from '../../layout/Button/Button';
 import { Link } from 'react-router-dom';
-import './EmbedItems.css';
+import './AboutHeroSection.css';
 
-function EmbedItems({
+function AboutHeroSection({
   lightBg,
   topLine,
   lightText,
@@ -14,22 +14,23 @@ function EmbedItems({
   img,
   alt,
   imgStart,
+  link,
 }) {
   return (
     <Fragment>
       <div
-        className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
+        className={lightBg ? 'about_hero-section' : 'about_hero-section darkBg'}
       >
         <div className="container">
           <div
-            className="row home__hero-row"
+            className="row about__hero-row"
             style={{
               display: 'flex',
               flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
             }}
           >
             <div className="col">
-              <div className="home__hero-text-wrapper">
+              <div className="about__hero-text-wrapper">
                 <div className="top-line">{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -37,13 +38,13 @@ function EmbedItems({
                 <p
                   className={
                     lightTextDesc
-                      ? 'home__hero-subtitle'
-                      : 'home__hero-subtitle dark'
+                      ? 'about__hero-subtitle'
+                      : 'about__hero-subtitle dark'
                   }
                 >
                   {description}
                 </p>
-                <Link to="/sign-up">
+                <Link to={link}>
                   <Button buttonSize="btn--wide" buttonColor="green">
                     {buttonLabel}
                   </Button>
@@ -51,18 +52,8 @@ function EmbedItems({
               </div>
             </div>
             <div className="col">
-              <div className="home__hero-img-wrapper">
-                <iframe
-                  title="Fire Safe Councils of San Diego County"
-                  src="https://www.google.com/maps/d/embed?mid=1BnIKYtIhWdZ8P1dJ6kMBFPUCTAQ"
-                  width="600"
-                  height="480"
-                ></iframe>
-                <p>
-                  Click on the map to view local San Diego FSCs and their
-                  contact info. Or click here to view them in a list. And click
-                  here for a list of all local fire stations.
-                </p>
+              <div className="about__hero-img-wrapper">
+                <img src={img} alt={alt} className="about__hero-img" />
               </div>
             </div>
           </div>
@@ -72,4 +63,4 @@ function EmbedItems({
   );
 }
 
-export default EmbedItems;
+export default AboutHeroSection;

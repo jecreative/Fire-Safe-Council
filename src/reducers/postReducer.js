@@ -1,6 +1,9 @@
 import {
   GET_POSTS,
   GET_POST,
+  GET_FEATURED_POSTS,
+  GET_NEWS_POSTS,
+  GET_EVENT_POSTS,
   SEARCH_POSTS,
   SET_CURRENT,
   GET_CURRENT,
@@ -11,6 +14,9 @@ import {
 
 const initialState = {
   posts: null,
+  featuredPosts: null,
+  news: null,
+  events: null,
   post: null,
   current: null,
   loading: false,
@@ -31,6 +37,24 @@ export default (state = initialState, action) => {
         posts: state.post.map((post) =>
           post.id === action.payload.id ? action.payload : post
         ),
+      };
+    case GET_FEATURED_POSTS:
+      return {
+        ...state,
+        featuredPosts: action.payload,
+        loading: false,
+      };
+    case GET_NEWS_POSTS:
+      return {
+        ...state,
+        news: action.payload,
+        loading: false,
+      };
+    case GET_EVENT_POSTS:
+      return {
+        ...state,
+        events: action.payload,
+        loading: false,
       };
     case SEARCH_POSTS:
       return {

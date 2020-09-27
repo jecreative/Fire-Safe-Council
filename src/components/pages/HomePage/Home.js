@@ -1,24 +1,27 @@
 import React, { Fragment } from 'react';
-import HeroSection from '../../layout/HeroSection';
-import LearnMoreSection from '../../layout/LearnMoreSection';
-import NewsSection from '../../layout/NewsSection';
-import EmbedItems from '../../layout/EmbedItems';
+import HeroSection from '../../layout/Hero/HeroSection';
+import FSCMap from '../../layout/FSCMap/FSCMap';
+import FeaturedHighlights from '../../layout/Featured/FeaturedHighlights';
+import ContactForm from '../../layout/ContactForm/ContactForm';
 import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree,
-  homeObjFour,
-  homeObjFive,
+  homeHeroObj,
+  homeNewsObj,
+  homeCommunityObj,
+  homeLearnMoreObj,
+  homeMapObj,
+  homeContactObj,
 } from './Data';
 
 function Home() {
   return (
     <Fragment>
-      <HeroSection {...homeObjOne} />
-      <LearnMoreSection {...homeObjFour} />
-      <EmbedItems {...homeObjFive} />
-      <NewsSection {...homeObjTwo} />
-      <HeroSection {...homeObjThree} />
+      <HeroSection {...homeHeroObj} />
+      <HeroSection {...homeLearnMoreObj} />
+      <FSCMap {...homeMapObj} />
+      <HeroSection {...homeNewsObj} />
+      {/* <FeaturedHighlights /> */}
+      <HeroSection {...homeCommunityObj} />
+      <ContactForm {...homeContactObj} />
     </Fragment>
   );
 }

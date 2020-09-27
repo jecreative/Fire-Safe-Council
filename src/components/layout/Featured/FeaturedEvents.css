@@ -1,0 +1,18 @@
+.d-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dateTime {
+  flex: 0;
+}
+
+.event {
+  flex: 1;
+}
+
+.news-title,
+.events-title {
+  text-align: left !important;
+}

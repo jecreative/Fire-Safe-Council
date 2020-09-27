@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Moment from 'react-moment';
+
 import { connect } from 'react-redux';
 import ReactMarkdown from 'react-markdown/with-html';
 import { getPosts } from '../../../actions/postActions';
@@ -13,7 +13,7 @@ const PostDetailPage = ({ post: { current, loading }, getPost }) => {
   let postItem = JSON.parse(localStorage.getItem('post'));
   console.log(postItem);
 
-  const { title, body, description, date, images } = postItem;
+  const { title, body, images } = postItem;
 
   console.log();
 

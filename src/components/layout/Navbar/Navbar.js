@@ -1,15 +1,17 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { GiFireShield } from 'react-icons/gi';
 
-import { Button } from '../layout/Button';
+import FSCLogo from './FSC-logo.svg';
+
+import { Button } from '../Button/Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
-
+import Dropdown from './Dropdown';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -22,6 +24,23 @@ function Navbar() {
     }
   };
 
+  const onMouseEnter = () => {
+    // Only have drop down on Tablet or Higher
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
   useEffect(() => {
     showButton();
   }, []);
@@ -31,14 +50,17 @@ function Navbar() {
   return (
     <Fragment>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <div className="navbar">
+        <nav className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <GiFireShield className="navbar-icon" />
-              UC | FSC
+              <img src={FSCLogo} alt="Fire Safe Council Logo" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? (
+                <FaTimes style={{ color: '#346504' }} />
+              ) : (
+                <FaBars style={{ color: '#346504' }} />
+              )}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className="nav-item">
@@ -55,14 +77,19 @@ function Navbar() {
                   About
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+              >
                 <Link
                   to="/resources"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  Resources
+                  Resources <i className="fas fa-caret-down" />
                 </Link>
+                {dropdown && <Dropdown />}
               </li>
 
               <li className="nav-item">
@@ -77,7 +104,9 @@ function Navbar() {
               <li className="nav-btn">
                 {button ? (
                   <Link to="/contact" className="btn-link">
-                    <Button buttonStyle="btn--outline">CONTACT</Button>
+                    <Button buttonStyle="btn--outline" buttonColor="green">
+                      CONTACT
+                    </Button>
                   </Link>
                 ) : (
                   <Link
@@ -85,7 +114,11 @@ function Navbar() {
                     className="btn-link"
                     onClick={closeMobileMenu}
                   >
-                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                    <Button
+                      buttonStyle="btn--primary"
+                      buttonSize="btn--mobile"
+                      buttonColor="primary"
+                    >
                       CONTACT
                     </Button>
                   </Link>
@@ -93,7 +126,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
+        </nav>
       </IconContext.Provider>
     </Fragment>
   );

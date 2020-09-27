@@ -1,6 +1,6 @@
 import React from 'react';
 import Posts from './Posts';
-import HeroSection from '../../layout/HeroSection';
+import HeroSection from '../../layout/Hero/HeroSection';
 import { blogObjOne, blogObjTwo } from './Data';
 
 const Blog = () => {

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Button } from './Button';
+import { Button } from '../../layout/Button/Button';
 import { Link } from 'react-router-dom';
 import './PreparednessHero.css';
 
@@ -14,6 +14,7 @@ function PreparednessHeroSection({
   img,
   alt,
   imgStart,
+  link,
 }) {
   return (
     <Fragment>
@@ -43,6 +44,27 @@ function PreparednessHeroSection({
                 >
                   {description}
                 </p>
+                {link.startsWith('/', [0]) ? (
+                  <Link to={link}>
+                    {buttonLabel === '' ? (
+                      ''
+                    ) : (
+                      <Button buttonSize="btn--wide" buttonColor="green">
+                        {buttonLabel}
+                      </Button>
+                    )}
+                  </Link>
+                ) : (
+                  <a href={link}>
+                    {buttonLabel === '' ? (
+                      ''
+                    ) : (
+                      <Button buttonSize="btn--wide" buttonColor="green">
+                        {buttonLabel}
+                      </Button>
+                    )}
+                  </a>
+                )}
               </div>
             </div>
             <div className="col">

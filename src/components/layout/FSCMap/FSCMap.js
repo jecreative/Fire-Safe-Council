@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
-import './HeroSection.css';
+import './FSCMap.css';
 
-function HeroSection({
+function FSCMap({
   lightBg,
   topLine,
   lightText,
@@ -18,18 +18,18 @@ function HeroSection({
   return (
     <Fragment>
       <div
-        className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
+        className={lightBg ? 'map__hero-section' : 'map__hero-section darkBg'}
       >
         <div className="container">
           <div
-            className="row home__hero-row"
+            className="row map__hero-row"
             style={{
               display: 'flex',
               flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
             }}
           >
             <div className="col">
-              <div className="home__hero-text-wrapper">
+              <div className="map__hero-text-wrapper">
                 <div className="top-line">{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -37,13 +37,13 @@ function HeroSection({
                 <p
                   className={
                     lightTextDesc
-                      ? 'home__hero-subtitle'
-                      : 'home__hero-subtitle dark'
+                      ? 'map__hero-subtitle'
+                      : 'map__hero-subtitle dark'
                   }
                 >
                   {description}
                 </p>
-                <Link to="/contact">
+                <Link to="/sign-up">
                   <Button buttonSize="btn--wide" buttonColor="green">
                     {buttonLabel}
                   </Button>
@@ -51,8 +51,18 @@ function HeroSection({
               </div>
             </div>
             <div className="col">
-              <div className="home__hero-img-wrapper">
-                <img src={img} alt={alt} className="home__hero-img" />
+              <div className="map__hero-img-wrapper">
+                <iframe
+                  title="Fire Safe Councils of San Diego County"
+                  src="https://www.google.com/maps/d/embed?mid=1BnIKYtIhWdZ8P1dJ6kMBFPUCTAQ"
+                  width="600"
+                  height="480"
+                ></iframe>
+                <p>
+                  Click on the map to view local San Diego FSCs and their
+                  contact info. Or click here to view them in a list. And click
+                  here for a list of all local fire stations.
+                </p>
               </div>
             </div>
           </div>
@@ -62,4 +72,4 @@ function HeroSection({
   );
 }
 
-export default HeroSection;
+export default FSCMap;
