@@ -1,14 +1,14 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getPosts, searchPosts } from '../../../actions/postActions';
+import { getPosts, setCurrent } from '../../../actions/postActions';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
 import Spinner from '../Spinner/Spinner';
 
 import '../ContactForm/ContactForm.css';
 
-const Search = ({ post: { posts, loading }, getPosts, searchPosts }) => {
+const Search = ({ post: { posts, loading }, getPosts, setCurrent }) => {
   useEffect(() => {
     getPosts();
 
@@ -22,36 +22,28 @@ const Search = ({ post: { posts, loading }, getPosts, searchPosts }) => {
   const handleChange = (e) => {
     // console.log(e.target.value) //value of search input
 
-    let searchInput = []
     let searchedPosts = [];
 
     const searchPosts = (post) => {
-     const title = post.title
-     console.log(title)
-      if(post.title.includes(e.target.value)) {
-        // console.log(post)
+      if (post.title.toLowerCase().includes(e.target.value)) {
+        searchedPosts.push(post);
+        setCurrent(searchedPosts);
       }
-      
-      }
-    
-    posts.map((post) => {
-        searchPosts(post)
-    })
+    };
 
-  
+    posts.map((post) => {
+      searchPosts(post);
+    });
 
     // console.log(searchedPosts)
-    
-  }
-  
+  };
+
   // console.log(posts)
-  
 
   return (
     <Fragment>
       <div className="search-bar">
         <div className="search-group">
-         
           <input
             type="search"
             name="search"
@@ -67,11 +59,11 @@ const Search = ({ post: { posts, loading }, getPosts, searchPosts }) => {
 Search.propTypes = {
   post: PropTypes.object.isRequired,
   getPosts: PropTypes.func.isRequired,
-  searchPosts: PropTypes.func.isRequired,
+  setCurrent: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
   post: state.post,
 });
 
-export default connect(mapStateToProps, { getPosts, searchPosts })(Search);
+export default connect(mapStateToProps, { getPosts, setCurrent })(Search);

@@ -1,10 +1,14 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 
 import { connect } from 'react-redux';
 import ReactMarkdown from 'react-markdown/with-html';
-import { getPosts } from '../../../actions/postActions';
+import { clearCurrent, getPosts } from '../../../actions/postActions';
 
-const PostDetailPage = ({ post: { current, loading }, getPost }) => {
+const PostDetailPage = ({
+  post: { current, loading },
+  getPost,
+  clearCurrent,
+}) => {
   // Persist Current in LocalStorage and fetch as postItem
   if (current !== null) {
     let item = 'post';
@@ -14,8 +18,6 @@ const PostDetailPage = ({ post: { current, loading }, getPost }) => {
   console.log(postItem);
 
   const { title, body, images } = postItem;
-
-  console.log();
 
   return (
     <Fragment>
@@ -54,8 +56,11 @@ const PostDetailPage = ({ post: { current, loading }, getPost }) => {
     </Fragment>
   );
 };
+
 const mapStateToProps = (state) => ({
   post: state.post,
 });
 
-export default connect(mapStateToProps, { getPosts })(PostDetailPage);
+export default connect(mapStateToProps, { getPosts, clearCurrent })(
+  PostDetailPage
+);

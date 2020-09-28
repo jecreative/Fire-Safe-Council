@@ -23,7 +23,7 @@ function Home() {
       <HeroSection {...homeNewsObj} />
       <HeroSection {...homeLearnMoreObj} />
       <HeroSection {...homeCommunityObj} />
-      <FeaturedHighlights />
+      {/* <FeaturedHighlights /> */}
 
       <ContactForm {...homeContactObj} />
     </Fragment>

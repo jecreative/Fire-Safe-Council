@@ -18,7 +18,7 @@ const initialState = {
   news: null,
   events: null,
   post: null,
-  current: null,
+  current: [],
   loading: false,
   error: null,
 };
@@ -74,7 +74,7 @@ export default (state = initialState, action) => {
     case CLEAR_CURRENT:
       return {
         ...state,
-        current: null,
+        current: [],
       };
     case SET_LOADING:
       return {

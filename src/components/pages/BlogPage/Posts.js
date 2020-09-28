@@ -3,13 +3,19 @@ import { connect } from 'react-redux';
 import PostItem from './PostItem';
 import Spinner from '../../layout/Spinner/Spinner';
 import PropTypes from 'prop-types';
-import { getPosts } from '../../../actions/postActions';
+import { clearCurrent, getPosts } from '../../../actions/postActions';
 
 import './Blog.css';
 
-const Posts = ({ post: { posts, loading }, getPosts }) => {
+const Posts = ({
+  post: { posts, current, loading },
+  getPosts,
+  clearCurrent,
+}) => {
   useEffect(() => {
+    clearCurrent();
     getPosts();
+
     //eslint-disable-next-line
   }, []);
 
@@ -22,6 +28,8 @@ const Posts = ({ post: { posts, loading }, getPosts }) => {
       <div className="container d-flex">
         {!loading && posts.length === 0 ? (
           <p className="center">No posts to show...</p>
+        ) : current.length === 1 ? (
+          current.map((post) => <PostItem post={post} key={post.id} />)
         ) : (
           posts.map((post) => <PostItem post={post} key={post.id} />)
         )}
@@ -39,4 +47,4 @@ const mapStateToProps = (state) => ({
   post: state.post,
 });
 
-export default connect(mapStateToProps, { getPosts })(Posts);
+export default connect(mapStateToProps, { getPosts, clearCurrent })(Posts);
