@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Button } from '../../layout/Button/Button';
 import { Link } from 'react-router-dom';
-import './AboutHeroSection.css';
+import './MainHeroSection.css';
 
-function AboutHeroSection({
+function MainHeroSection({
   lightBg,
   topLine,
   lightText,
@@ -19,18 +19,20 @@ function AboutHeroSection({
   return (
     <Fragment>
       <div
-        className={lightBg ? 'about_hero-section' : 'about_hero-section darkBg'}
+        className={
+          lightBg ? 'mainHero__hero-section' : 'mainHero__hero-section darkBg'
+        }
       >
         <div className="container">
           <div
-            className="row about__hero-row"
+            className="row mainHero__hero-row"
             style={{
               display: 'flex',
               flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
             }}
           >
             <div className="col">
-              <div className="about__hero-text-wrapper">
+              <div className="mainHero__hero-text-wrapper">
                 <div className="top-line">{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -38,8 +40,8 @@ function AboutHeroSection({
                 <p
                   className={
                     lightTextDesc
-                      ? 'about__hero-subtitle'
-                      : 'about__hero-subtitle dark'
+                      ? 'mainHero__hero-subtitle'
+                      : 'mainHero__hero-subtitle dark'
                   }
                 >
                   {description}
@@ -56,8 +58,8 @@ function AboutHeroSection({
               </div>
             </div>
             <div className="col">
-              <div className="about__hero-img-wrapper">
-                <img src={img} alt={alt} className="about__hero-img" />
+              <div className="mainHero__hero-img-wrapper">
+                <img src={img} alt={alt} className="mainHero__hero-img" />
               </div>
             </div>
           </div>
@@ -67,4 +69,4 @@ function AboutHeroSection({
   );
 }
 
-export default AboutHeroSection;
+export default MainHeroSection;

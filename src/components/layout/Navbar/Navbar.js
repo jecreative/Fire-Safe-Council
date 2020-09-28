@@ -8,10 +8,12 @@ import { Button } from '../Button/Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 import Dropdown from './Dropdown';
+import AboutDropdown from './AboutDropdown';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const [dropdown, setDropdown] = useState(false);
+  const [dropdown01, setDropdown01] = useState(false);
+  const [dropdown02, setDropdown02] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,17 +29,34 @@ function Navbar() {
   const onMouseEnter = () => {
     // Only have drop down on Tablet or Higher
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown01(false);
     } else {
-      setDropdown(true);
+      setDropdown01(true);
     }
   };
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown01(false);
     } else {
-      setDropdown(false);
+      setDropdown01(false);
+    }
+  };
+
+  const onMouseEnter02 = () => {
+    // Only have drop down on Tablet or Higher
+    if (window.innerWidth < 960) {
+      setDropdown02(false);
+    } else {
+      setDropdown02(true);
+    }
+  };
+
+  const onMouseLeave02 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown02(false);
+    } else {
+      setDropdown02(false);
     }
   };
 
@@ -68,14 +87,19 @@ function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onMouseEnter={onMouseEnter02}
+                onMouseLeave={onMouseLeave02}
+              >
                 <Link
                   to="/about"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  About
+                  About <i className="fas fa-caret-down" />
                 </Link>
+                {dropdown02 && <AboutDropdown />}
               </li>
               <li
                 className="nav-item"
@@ -89,7 +113,7 @@ function Navbar() {
                 >
                   Resources <i className="fas fa-caret-down" />
                 </Link>
-                {dropdown && <Dropdown />}
+                {dropdown01 && <Dropdown />}
               </li>
 
               <li className="nav-item">

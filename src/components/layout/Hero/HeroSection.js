@@ -44,11 +44,15 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to={link}>
-                  <Button buttonSize="btn--wide" buttonColor="green">
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                {link !== '' ? (
+                  <Link to={link}>
+                    <Button buttonSize="btn--wide" buttonColor="green">
+                      {buttonLabel}
+                    </Button>
+                  </Link>
+                ) : (
+                  ''
+                )}
               </div>
             </div>
             <div className="col">

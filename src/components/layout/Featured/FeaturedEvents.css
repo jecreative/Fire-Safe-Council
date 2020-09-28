@@ -16,3 +16,7 @@
 .events-title {
   text-align: left !important;
 }
+
+.featured h2 {
+  text-align: left;
+}

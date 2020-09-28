@@ -1,22 +1,22 @@
 export const homeHeroObj = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'University City',
   headline: `Fire Safe Council`,
   description:
-    'One of forty-one local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires',
-  link: '/',
+    'One of forty-one local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires.',
+  link: '/contact',
   buttonLabel: 'Get Started',
   imgStart: '',
-  img: 'fsc-images/fsc-svg1.png',
+  img: 'fsc-images/fsc-svg9.png',
   alt: 'Credit Card',
 };
 
 export const homeLearnMoreObj = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Increased Safety',
   headline: 'Fire Safe Councils create a powerful group initiative ',
   description:
@@ -24,7 +24,7 @@ export const homeLearnMoreObj = {
   link: '/about',
   buttonLabel: 'Learn More',
   imgStart: 'start',
-  img: 'fsc-images/fsc-svg9.png',
+  img: 'fsc-images/fsc-svg1.png',
   alt: 'Vault',
 };
 
@@ -37,7 +37,7 @@ export const homeMapObj = {
   description:
     'The Fire Safe Council of San Diego County helps residents protect their families and homes from wildfire. Through our programs and services we foster fire prevention and safety throughout the county, while encouraging community involvement. Learn what you can do before, during, and after a wildfire to stay fire safe and fire wise.',
   link: '/',
-  buttonLabel: 'Get Started',
+  buttonLabel: '',
   imgStart: '',
   img: 'fsc-images/fsc-svg1.png',
   alt: 'Credit Card',
@@ -59,9 +59,9 @@ export const homeNewsObj = {
 };
 
 export const homeCommunityObj = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'Community Support',
   headline:
     'California’s leader in community wildfire risk reduction and resiliency.',

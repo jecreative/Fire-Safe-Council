@@ -43,11 +43,6 @@ function FSCMap({
                 >
                   {description}
                 </p>
-                <Link to="/sign-up">
-                  <Button buttonSize="btn--wide" buttonColor="green">
-                    {buttonLabel}
-                  </Button>
-                </Link>
               </div>
             </div>
             <div className="col">

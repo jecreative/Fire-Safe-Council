@@ -18,6 +18,9 @@ import ScrollToTop from './utils/ScrollToTop';
 // Pages
 import Home from './components/pages/HomePage/Home';
 import About from './components/pages/AboutPage/About';
+import Mission from './components/pages/MissionPage/Mission';
+import WhoWeAre from './components/pages/WhoWeArePage/WhoWeAre';
+import Partners from './components/pages/PartnersPage/Partners';
 import Resources from './components/pages/ResourcesPage/Resources';
 import WildFirePrep from './components/pages/ResourcesPage/WildFirePrep';
 import Contact from './components/pages/ContactPage/Contact';
@@ -33,6 +36,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/mission" exact component={Mission} />
+          <Route path="/who-we-are" exact component={WhoWeAre} />
+          <Route path="/partners" exact component={Partners} />
           <Route path="/resources" exact component={Resources} />
           <Route
             path="/preparing-for-wildfire"

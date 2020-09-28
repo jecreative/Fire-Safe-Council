@@ -11,7 +11,7 @@ const FeaturedEvents = ({ event }) => {
       <div className="d-flex">
         <div className="event">
           {' '}
-          <h1>{event.title}</h1>
+          <h2>{event.title}</h2>
           <p className="card-text">
             {event.body ? event.body.slice(0, 250) : ''}...
           </p>

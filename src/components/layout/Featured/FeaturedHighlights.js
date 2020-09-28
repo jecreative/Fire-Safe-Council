@@ -29,10 +29,13 @@ const FeaturedHighlights = ({
 
   return (
     <Fragment>
-      <div className="container" style={{ marginTop: '5rem' }}>
+      <div
+        className="container featured"
+        style={{ marginTop: '5rem', marginBottom: '5rem' }}
+      >
         <div className="row">
           <div className="col">
-            <h2 className="news-title">What's New</h2>
+            <h1 className="news-title">What's New</h1>
             <hr />
             <br />
             {!loading && featuredPosts.length === 0 ? (
@@ -43,8 +46,8 @@ const FeaturedHighlights = ({
               ))
             )}
           </div>
-          <div className="col">
-            <h2 className="events-title">Upcoming Events</h2>
+          <div className="col" style={{ width: '50%' }}>
+            <h1 className="events-title">Upcoming Events</h1>
             <hr />
             <br />
             {!loading && events.length === 0 ? (

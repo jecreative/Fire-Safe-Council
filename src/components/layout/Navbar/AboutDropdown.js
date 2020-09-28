@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import './Dropdown.css';
 import { Link } from 'react-router-dom';
 
-function Dropdown() {
+function AboutDropdown() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
 
   const MenuItems = [
     {
-      title: 'Preparing for Wildfire',
-      path: '/preparing-for-wildfire',
+      title: 'Mission & Vision',
+      path: '/mission',
       cName: 'dropdown-link',
     },
     {
-      title: "Today's Fire Weather",
-      path: 'https://www.sdgeweather.com/',
+      title: 'Who We Are',
+      path: '/who-we-are',
       cName: 'dropdown-link',
     },
     {
-      title: 'Current Active Fires',
-      path: 'https://www.fire.ca.gov/incidents/',
+      title: 'Partners',
+      path: '/partners',
       cName: 'dropdown-link',
     },
   ];
@@ -47,8 +47,6 @@ function Dropdown() {
               ) : (
                 <a
                   href={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className={cName}
                   onClick={() => setClick(false)}
                 >
@@ -63,4 +61,4 @@ function Dropdown() {
   );
 }
 
-export default Dropdown;
+export default AboutDropdown;

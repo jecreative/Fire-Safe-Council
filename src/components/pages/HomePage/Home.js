@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import HeroSection from '../../layout/Hero/HeroSection';
+import MainHeroSection from './MainHeroSection';
 import FSCMap from '../../layout/FSCMap/FSCMap';
 import FeaturedHighlights from '../../layout/Featured/FeaturedHighlights';
 import ContactForm from '../../layout/ContactForm/ContactForm';
@@ -15,12 +16,15 @@ import {
 function Home() {
   return (
     <Fragment>
-      <HeroSection {...homeHeroObj} />
-      <HeroSection {...homeLearnMoreObj} />
+      <MainHeroSection {...homeHeroObj} />
+
       <FSCMap {...homeMapObj} />
+
       <HeroSection {...homeNewsObj} />
-      {/* <FeaturedHighlights /> */}
+      <HeroSection {...homeLearnMoreObj} />
       <HeroSection {...homeCommunityObj} />
+      <FeaturedHighlights />
+
       <ContactForm {...homeContactObj} />
     </Fragment>
   );

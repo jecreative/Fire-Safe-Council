@@ -1,9 +1,15 @@
-.contact__hero-section {
+.mainHero__hero-section {
   color: #fff;
   padding: 80px 0;
 }
 
-.contact__hero-row {
+
+.resources_hero-section {
+  color: #fff;
+  padding: 80px 0;
+}
+
+.mainHero__hero-row {
   align-items: center;
 }
 
@@ -25,7 +31,7 @@
   flex-basis: 50%;
 }
 
-.contact__hero-text-wrapper {
+.mainHero__hero-text-wrapper {
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -57,18 +63,18 @@
   background-color: #1c2237;
 }
 
-.contact__hero-subtitle {
+.mainHero__hero-subtitle {
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
 }
 
-.contact__hero-img-wrapper {
-  max-width: 555px;
+.mainHero__hero-img-wrapper {
+  max-width: 600px;
 }
 
-.contact__hero-img {
+.mainHero__hero-img {
   max-width: 95%;
   margin-top: 0;
   margin-right: 0;
@@ -83,89 +89,6 @@ img {
   display: inline-block;
 }
 
-/* Forms */
-input {
-  margin: 1.2rem 0;
-}
-
-.form-text {
-  display: block;
-  margin-top: 0.3rem;
-  color: #888;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
-select,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 0.4rem;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
-}
-
-input[type='submit'],
-button {
-  font: inherit;
-}
-
-
-.form-group {
-  margin: 1.2rem 0;
-}
-
-input[type='search'] {
-  display: block;
-  width: 75%;
-  padding: 0.4rem;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
-}
-
-.search-bar {
-  margin: 3rem auto;
-}
-
-.search-group {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-.form-group input {
-  margin: 0.2rem 0;
-}
-
-.form-container {
-  max-width: 500px;
-
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: auto;
-  overflow: hidden;
-  /* padding: 0 2rem; */
-}
-
-.form-container h1,
-h2,
-h3 {
-  text-align: center;
-}
-
-table th,
-table td {
-  padding: 1rem;
-  text-align: left;
-}
-
-table th {
-  background: var(--light-color);
-}
-
 @media screen and (max-width: 991px) {
   .container {
     padding-right: 30px;
@@ -174,12 +97,12 @@ table th {
 }
 
 @media screen and (max-width: 768px) {
-  .contact__hero-section {
+  .mainHero__hero-section {
     color: #fff;
     padding: 80px 0;
   }
 
-  .contact__hero-text-wrapper {
+  .mainHero__hero-text-wrapper {
     padding-bottom: 65px;
   }
 

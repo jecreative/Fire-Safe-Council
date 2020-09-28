@@ -46,9 +46,9 @@ export const resourcesObjThree = {
 
 // WildFire Prepardness
 export const prepObjOne = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'Preparing For Wildfire',
   headline: 'Stay protected with our preparedness resources',
   description:

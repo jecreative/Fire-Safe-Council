@@ -1,6 +1,6 @@
 .preparedness-container {
   width: 100%;
-  padding: 0 120px;
+  padding: 80px 80px;
   margin: 0 auto;
 }
 
@@ -109,6 +109,21 @@ img {
   display: inline-block;
 }
 
+/* About Mission Page */
+.preparedeness-text-wrapper {
+  width: 100%;
+  padding: 0px 160px;
+  margin: 0 auto;
+}
+
+.preparedeness-paragraph {
+  max-width: 800px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     padding-right: 30px;
@@ -117,7 +132,7 @@ img {
 
   .preparedness-container {
     width: 100%;
-    padding: 0 60px;
+    padding: 20px 0px;
     margin: 0 auto;
   }
 }
@@ -135,5 +150,11 @@ img {
   .col {
     max-width: 100%;
     flex-basis: 100%;
+  }
+
+  .preparedeness-text-wrapper {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0 auto;
   }
 }

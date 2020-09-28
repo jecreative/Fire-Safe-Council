@@ -9,6 +9,10 @@ import {
   FaLinkedin,
 } from 'react-icons/fa';
 import { GiFireShield } from 'react-icons/gi';
+import FSCLogo from '../Navbar/FSC-logo.svg';
+
+// Admin URL
+// https://fsc-backend.herokuapp.com/admin/auth/login
 
 function Footer() {
   return (
@@ -17,24 +21,26 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to="/mission">Mission &amp; Vision</Link>
+            <Link to="/who-we-are">Who We Are</Link>
+            <Link to="/partners">Partners</Link>
           </div>
           <div className="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <Link to="/contact">Contact</Link>
+            <a
+              href="https://cafiresafecouncil.org/resources/fire-safe-councils/map-of-fire-safe-councils/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Destinations
+            </a>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Resources</h2>
-            <Link to="/">Preparing for Wildfire</Link>
+            <Link to="/preparing-for-wildfire">Preparing for Wildfire</Link>
             <a
               href="https://www.sdgeweather.com/"
               target="_blank"
@@ -48,6 +54,13 @@ function Footer() {
               rel="noopener noreferrer"
             >
               Current Active Fires
+            </a>
+            <a
+              href="https://fsc-backend.herokuapp.com/admin/auth/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Administration
             </a>
           </div>
           <div className="footer-link-items">
@@ -94,8 +107,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              <GiFireShield className="navbar-icon" />
-              UC | FSC
+              <img src={FSCLogo} alt="Fire Safe Council" />
             </Link>
           </div>
           <small className="website-rights">

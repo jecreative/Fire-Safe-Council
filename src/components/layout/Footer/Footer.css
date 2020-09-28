@@ -136,9 +136,27 @@
   margin-bottom: 16px;
 }
 
+.social-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 820px) {
   .footer-links {
     padding-top: 2rem;
+  }
+
+  .social-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-input {
