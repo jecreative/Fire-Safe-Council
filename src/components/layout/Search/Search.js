@@ -25,7 +25,7 @@ const Search = ({ post: { posts, loading }, getPosts, setCurrent }) => {
     let searchedPosts = [];
 
     const searchPosts = (post) => {
-      if (post.title.toLowerCase().includes(e.target.value)) {
+      if (post.title.toLowerCase().includes(e.target.value.toLowerCase())) {
         searchedPosts.push(post);
         setCurrent(searchedPosts);
       }
