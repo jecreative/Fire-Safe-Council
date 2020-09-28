@@ -3,12 +3,6 @@ import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './ContactForm.css';
 
-// const encode = (data) => {
-//   return Object.keys(data)
-//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&');
-// };
-
 const ContactForm = ({
   lightBg,
   topLine,
@@ -21,32 +15,14 @@ const ContactForm = ({
   alt,
   imgStart,
 }) => {
-  // const [contact, setContact] = useState(
-  //   {
-  //     name: '',
-  //     email: '',
-  //     message: '',
-  //   },
-  //   []
-  // );
-
-  // // Post the form submission
-  // const handleSubmit = (e) => {
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: encode({ 'form-name': 'contact', contact }),
-  //   })
-  //     .then(() => alert('Success!'))
-  //     .catch((error) => alert(error));
-
-  //   e.preventDefault();
-  // };
-
-  // const handleChange = (e) => setContact({ [e.target.name]: e.target.value });
-
-  // const { name, email, message } = contact;
-
+  const onSubmit = () => {
+    this.history.push(
+      '',
+      () =>
+        (window.location.href =
+          'https://objective-joliot-10d175.netlify.app/contact')
+    );
+  };
   return (
     <Fragment>
       <div
@@ -76,7 +52,7 @@ const ContactForm = ({
                   {description}
                 </p>
                 <div className="form-container">
-                  <form name="contact" method="post" action="/">
+                  <form name="contact" method="post" action="">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="form-group">
                       <input
@@ -109,6 +85,7 @@ const ContactForm = ({
                       type="submit"
                       buttonSize="btn--wide"
                       buttonColor="green"
+                      onSubmit={onSubmit}
                     >
                       {buttonLabel}
                     </Button>
