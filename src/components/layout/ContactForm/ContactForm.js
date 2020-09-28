@@ -83,11 +83,12 @@ const ContactForm = ({
 
                     <Button
                       type="submit"
+                      to="/"
                       buttonSize="btn--wide"
                       buttonColor="green"
                       onSubmit={onSubmit}
                     >
-                      <Link to="/">{buttonLabel}</Link>
+                      {buttonLabel}
                     </Button>
                   </form>
                 </div>
