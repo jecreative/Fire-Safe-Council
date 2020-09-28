@@ -1,3 +1,7 @@
-from = "/*"
-to = "/"
-status = 200
+[build]
+  functions = "functions"
+  publish = "build"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
