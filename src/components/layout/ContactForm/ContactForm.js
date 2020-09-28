@@ -76,11 +76,7 @@ const ContactForm = ({
                   {description}
                 </p>
                 <div className="form-container">
-                  <form
-                    name="contact"
-                    method="post"
-                    action="https://focused-thompson-e2eee5.netlify.app/"
-                  >
+                  <form name="contact" method="post" action="/">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="form-group">
                       <input
