@@ -1,3 +1,5 @@
 Website for the San Diego - University City Fire Safe Council
 <br />
-Built with Strapi, React, and Redux
+First application built with React & Redux on the frontend
+<br/>
+Used Strapi for the backend 
