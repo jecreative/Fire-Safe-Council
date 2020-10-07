@@ -1,4 +1,4 @@
-## San Diego - University City Fire Safe Council**
+## San Diego - University City Fire Safe Council
 
 First application built with React & Redux on the frontend
 
