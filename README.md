@@ -1,5 +1,5 @@
-**San Diego - University City Fire Safe Council**
-<br />
+## San Diego - University City Fire Safe Council**
+
 First application built with React & Redux on the frontend
-<br/>
-Used Strapi for the backend and deployed to Netlify
+
+Used Strapi for the backend blog and deployed to Netlify
