@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './Dropdown.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import './Dropdown.css'
+import { Link } from 'react-router-dom'
 
 function AboutDropdown() {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click)
 
   const MenuItems = [
     {
@@ -18,12 +18,7 @@ function AboutDropdown() {
       path: '/who-we-are',
       cName: 'dropdown-link',
     },
-    {
-      title: 'Partners',
-      path: '/partners',
-      cName: 'dropdown-link',
-    },
-  ];
+  ]
 
   return (
     <>
@@ -32,7 +27,7 @@ function AboutDropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         {MenuItems.map((item, index) => {
-          const { title, path, cName } = item;
+          const { title, path, cName } = item
 
           return (
             <li key={index}>
@@ -54,11 +49,11 @@ function AboutDropdown() {
                 </a>
               )}
             </li>
-          );
+          )
         })}
       </ul>
     </>
-  );
+  )
 }
 
-export default AboutDropdown;
+export default AboutDropdown
