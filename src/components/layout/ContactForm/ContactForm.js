@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment } from 'react'
 import { Button } from '../Button/Button'
 import './ContactForm.css'
 
@@ -22,9 +22,7 @@ const ContactForm = ({
           'https://objective-joliot-10d175.netlify.app/contact')
     )
   }
-  useEffect(() => {
-    document.title = 'Contact - Fire Safe Council'
-  }, [])
+
   return (
     <Fragment>
       <div

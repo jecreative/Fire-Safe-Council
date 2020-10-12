@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import HeroSection from '../../layout/Hero/HeroSection'
 import MainHeroSection from './MainHeroSection'
 import FSCMap from '../../layout/FSCMap/FSCMap'
@@ -13,6 +13,9 @@ import {
 } from './Data'
 
 function Home() {
+  useEffect(() => {
+    document.title = 'University City - Fire Safe Council'
+  }, [])
   return (
     <Fragment>
       <MainHeroSection {...homeHeroObj} />
