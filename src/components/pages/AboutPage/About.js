@@ -1,14 +1,18 @@
-import React, { Fragment } from 'react';
-import AboutHeroSection from './AboutHeroSection';
+import React, { Fragment, useEffect } from 'react'
+import AboutHeroSection from './AboutHeroSection'
 import {
   aboutHeroObj,
   aboutMissionObj,
   aboutWhoWeAreObj,
   aboutFundingObj,
-} from './Data';
-import './AboutHeroSection.css';
+} from './Data'
+import './AboutHeroSection.css'
 
 function About() {
+  useEffect(() => {
+    document.title = 'About - Fire Safe Council'
+  }, [])
+
   return (
     <Fragment>
       <AboutHeroSection {...aboutHeroObj} />
@@ -16,7 +20,7 @@ function About() {
       <AboutHeroSection {...aboutWhoWeAreObj} />
       <AboutHeroSection {...aboutFundingObj} />
     </Fragment>
-  );
+  )
 }
 
-export default About;
+export default About

@@ -1,10 +1,13 @@
-import React from 'react';
-import Posts from './Posts';
-import HeroSection from '../../layout/Hero/HeroSection';
-import Search from '../../layout/Search/Search';
-import { blogObjOne, blogObjTwo } from './Data';
+import React, { useEffect } from 'react'
+import Posts from './Posts'
+import HeroSection from '../../layout/Hero/HeroSection'
+import Search from '../../layout/Search/Search'
+import { blogObjOne, blogObjTwo } from './Data'
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = 'News & Events - Fire Safe Council'
+  }, [])
   return (
     <div>
       <HeroSection
@@ -15,7 +18,7 @@ const Blog = () => {
       <Posts />
       <HeroSection {...blogObjTwo} />
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

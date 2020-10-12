@@ -1,14 +1,17 @@
-import React, { Fragment } from 'react';
-import AboutHeroSection from '../AboutPage/AboutHeroSection';
-import { MissionHeroObj } from './Data';
+import React, { Fragment, useEffect } from 'react'
+import AboutHeroSection from '../AboutPage/AboutHeroSection'
+import { MissionHeroObj } from './Data'
 
 const Mission = () => {
+  useEffect(() => {
+    document.title = 'Our Mission - Fire Safe Council'
+  }, [])
   return (
     <Fragment>
       <AboutHeroSection {...MissionHeroObj} />
 
-      <div className="about__mission-text-wrapper">
-        <p className="about__mission-paragraph">
+      <div className='about__mission-text-wrapper'>
+        <p className='about__mission-paragraph'>
           The California Fire Safe Council (CFSC), a California non-profit
           corporation, was first formed as a project of the California
           Department of Forestry and Fire Protection (CAL FIRE) in 1993.
@@ -75,7 +78,7 @@ const Mission = () => {
         </p>
       </div>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Mission;
+export default Mission

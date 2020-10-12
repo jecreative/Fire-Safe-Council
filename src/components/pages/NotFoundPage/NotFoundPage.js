@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Button } from '../../layout/Button/Button'
 
 const NotFoundPage = () => {
+  useEffect(() => {
+    document.title = 'Page Not Found'
+  }, [])
   return (
     <div
       className='container'
@@ -11,15 +14,15 @@ const NotFoundPage = () => {
         textAlign: 'center',
         boxShadow: 'rgba(0,0,0,1)',
         margin: '50px auto',
-        padding: '10rem',
+        padding: '8rem 2rem',
       }}
     >
-      <h1>404 Page Not Found</h1>
+      <h1>Page Not Found</h1>
       <Link to='/'>
         <Button
-          buttonSize='btn--wide'
+          buttonSize='btn--sm'
           buttonColor='green'
-          style={{ width: '100%', margin: '0 auto' }}
+          style={{ width: '50%', margin: '0 auto' }}
         >
           Back to Home Page
         </Button>

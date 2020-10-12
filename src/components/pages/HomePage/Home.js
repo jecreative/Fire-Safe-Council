@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
-import HeroSection from '../../layout/Hero/HeroSection';
-import MainHeroSection from './MainHeroSection';
-import FSCMap from '../../layout/FSCMap/FSCMap';
-import FeaturedHighlights from '../../layout/Featured/FeaturedHighlights';
-import ContactForm from '../../layout/ContactForm/ContactForm';
+import React, { Fragment } from 'react'
+import HeroSection from '../../layout/Hero/HeroSection'
+import MainHeroSection from './MainHeroSection'
+import FSCMap from '../../layout/FSCMap/FSCMap'
+import ContactForm from '../../layout/ContactForm/ContactForm'
 import {
   homeHeroObj,
   homeNewsObj,
@@ -11,7 +10,7 @@ import {
   homeLearnMoreObj,
   homeMapObj,
   homeContactObj,
-} from './Data';
+} from './Data'
 
 function Home() {
   return (
@@ -27,7 +26,7 @@ function Home() {
 
       <ContactForm {...homeContactObj} />
     </Fragment>
-  );
+  )
 }
 
-export default Home;
+export default Home

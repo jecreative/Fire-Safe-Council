@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import './Preparedness.css';
+import React, { Fragment } from 'react'
+import './Preparedness.css'
 
 function Preparedness({
   lightBg,
@@ -16,28 +16,28 @@ function Preparedness({
 }) {
   return (
     <Fragment>
-      <div className="preparedness-container">
+      <div className='preparedness-container'>
         {/* Home Hardening and Defense */}
-        <div className="preparedeness-text-wrapper">
-          <div className="heading2">{topLine}</div>
-          <p className=".preparedeness-paragraph">
-            <span className="top-line">Firewise Communities:</span> a program of
+        <div className='preparedeness-text-wrapper'>
+          <div className='heading2'>{topLine}</div>
+          <p className='.preparedeness-paragraph'>
+            <span className='top-line'>Firewise Communities:</span> a program of
             the{' '}
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.nfpa.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.nfpa.org/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 National Fire Protection Association
               </a>
             </span>
             , and a key component of{' '}
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.fireadapted.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.fireadapted.org/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Fire Adapted Communities{' '}
               </a>
@@ -46,11 +46,11 @@ function Preparedness({
             protect homes and lives against the risks of wildfire.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://ucanr.edu/sites/Wildfire/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://ucanr.edu/sites/Wildfire/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Homeowner’s Wildfire Mitigation Guide:{' '}
               </a>
@@ -60,11 +60,11 @@ function Preparedness({
             home to improve its chances of surviving a wildfire.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="https://disastersafety.org/wildfire/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://disastersafety.org/wildfire/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Insurance Institute for Business and Home Safety (IBHS):{' '}
               </a>
@@ -74,11 +74,11 @@ function Preparedness({
             checklists, and videos.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.readyforwildfire.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.readyforwildfire.org/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Ready for Wildfire:{' '}
               </a>
@@ -89,11 +89,11 @@ function Preparedness({
             protect your family and home.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.readysandiego.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.readysandiego.org/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Ready San Diego:{' '}
               </a>
@@ -104,11 +104,11 @@ function Preparedness({
             Emergency Smart Phone App to use on the go.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.sandiego.gov/fire/services/brush/index.shtml"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.sandiego.gov/fire/services/brush/index.shtml'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego Fire-Rescue Department:{' '}
               </a>
@@ -117,11 +117,11 @@ function Preparedness({
             guidance, and policies for City of San Diego residents.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.sandiegocounty.gov/content/sdc/sdcfa/prevention/defensible-space.html"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.sandiegocounty.gov/content/sdc/sdcfa/prevention/defensible-space.html'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego County Fire Authority:{' '}
               </a>
@@ -132,13 +132,13 @@ function Preparedness({
           <br />
           <br />
           {/* Local Fire Station Information */}
-          <div className="heading2">Find your local fire station</div>
-          <p className="preparednessText__hero-subtitle">
-            <span className="top-line">
+          <div className='heading2'>Find your local fire station</div>
+          <p className='preparednessText__hero-subtitle'>
+            <span className='top-line'>
               <a
-                href="http://calfire.ca.gov/contacts/units?UID=44"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://calfire.ca.gov/contacts/units?UID=44'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 CAL FIRE – San Diego Unit Stations:{' '}
               </a>
@@ -147,11 +147,11 @@ function Preparedness({
             Region service area with contact info for each station.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="https://www.sandiego.gov/fire/about/firestations"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://www.sandiego.gov/fire/about/firestations'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego Fire-Rescue:{' '}
               </a>
@@ -159,11 +159,11 @@ function Preparedness({
             a list of fire stations within the City of San Diego.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://sdcounty.maps.arcgis.com/apps/Viewer/index.html?appid=c6b86e4e53b14aefba7f128f9ad67f5c"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://sdcounty.maps.arcgis.com/apps/Viewer/index.html?appid=c6b86e4e53b14aefba7f128f9ad67f5c'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego County Fire Authority – Fire Protection Services Map:{' '}
               </a>
@@ -174,13 +174,13 @@ function Preparedness({
             <br />
           </p>
           {/* During and after an emergency */}
-          <div className="heading2">During and after an emergency</div>
-          <p className="preparednessText__hero-subtitle">
-            <span className="top-line">
+          <div className='heading2'>During and after an emergency</div>
+          <p className='preparednessText__hero-subtitle'>
+            <span className='top-line'>
               <a
-                href="http://www.211sandiego.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.211sandiego.org/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 2-1-1 San Diego:{' '}
               </a>
@@ -192,11 +192,11 @@ function Preparedness({
             call for status updates on wildfires.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://calfireinformation.weebly.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://calfireinformation.weebly.com/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego Fire-Rescue:{' '}
               </a>
@@ -205,11 +205,11 @@ function Preparedness({
             California.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://www.theredguidetorecovery.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://www.theredguidetorecovery.com/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Red Guide to Recovery:{' '}
               </a>
@@ -219,11 +219,11 @@ function Preparedness({
             available here.
             <br />
             <br />
-            <span className="top-line">
+            <span className='top-line'>
               <a
-                href="http://sdcountyemergency.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='http://sdcountyemergency.com/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 San Diego County Emergency:{' '}
               </a>
@@ -237,7 +237,7 @@ function Preparedness({
         </div>
       </div>
     </Fragment>
-  );
+  )
 }
 
-export default Preparedness;
+export default Preparedness

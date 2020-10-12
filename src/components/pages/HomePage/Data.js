@@ -11,7 +11,7 @@ export const homeHeroObj = {
   imgStart: '',
   img: 'fsc-images/fsc-svg9.png',
   alt: 'Credit Card',
-};
+}
 
 export const homeLearnMoreObj = {
   lightBg: true,
@@ -26,7 +26,7 @@ export const homeLearnMoreObj = {
   imgStart: 'start',
   img: 'fsc-images/fsc-svg1.png',
   alt: 'Vault',
-};
+}
 
 export const homeMapObj = {
   lightBg: true,
@@ -41,7 +41,7 @@ export const homeMapObj = {
   imgStart: '',
   img: 'fsc-images/fsc-svg1.png',
   alt: 'Credit Card',
-};
+}
 
 export const homeNewsObj = {
   lightBg: false,
@@ -56,7 +56,7 @@ export const homeNewsObj = {
   imgStart: '',
   img: 'fsc-images/fsc-svg2.png',
   alt: 'Vault',
-};
+}
 
 export const homeCommunityObj = {
   lightBg: false,
@@ -72,12 +72,12 @@ export const homeCommunityObj = {
   imgStart: 'start',
   img: 'fsc-images/fsc-svg10.png',
   alt: 'Vault',
-};
+}
 
 export const homeContactObj = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Get In Touch',
   headline: '',
   description:
@@ -87,4 +87,4 @@ export const homeContactObj = {
   imgStart: '',
   img: 'fsc-images/fsc-svg5.png',
   alt: 'Vault',
-};
+}
