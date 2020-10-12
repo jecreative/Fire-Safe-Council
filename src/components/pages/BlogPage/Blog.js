@@ -1,15 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Posts from './Posts'
 import HeroSection from '../../layout/Hero/HeroSection'
 import Search from '../../layout/Search/Search'
 import { blogObjOne, blogObjTwo } from './Data'
+import { Helmet } from 'react-helmet'
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = 'News & Events - Fire Safe Council'
-  }, [])
   return (
     <div>
+      <Helmet>
+        <title>News &amp; Events - Fire Safe Council</title>
+        <meta
+          name='description'
+          content='When it comes to wildfire, no single person alone can protect a community. Stay informed with our up to date News &amp; Events.'
+        />
+      </Helmet>
       <HeroSection
         {...blogObjOne}
         style={{ paddingTop: '160px!important', paddingBottom: '80px' }}

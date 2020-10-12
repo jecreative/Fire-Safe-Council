@@ -11,4 +11,4 @@ export const MissionHeroObj = {
   imgStart: '',
   img: 'fsc-images/fsc-svg3.png',
   alt: 'Credit Card',
-};
+}

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment } from 'react'
 import HeroSection from '../../layout/Hero/HeroSection'
 import MainHeroSection from './MainHeroSection'
 import FSCMap from '../../layout/FSCMap/FSCMap'
@@ -11,13 +11,18 @@ import {
   homeMapObj,
   homeContactObj,
 } from './Data'
+import { Helmet } from 'react-helmet'
 
 function Home() {
-  useEffect(() => {
-    document.title = 'University City - Fire Safe Council'
-  }, [])
   return (
     <Fragment>
+      <Helmet>
+        <meta
+          name='description'
+          content='The University City Fire Safe Council aims to foster a fire safe &amp; fire wise region.'
+        />
+        <title>University City - Fire Safe Council</title>
+      </Helmet>
       <MainHeroSection {...homeHeroObj} />
 
       <FSCMap {...homeMapObj} />

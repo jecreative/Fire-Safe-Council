@@ -1,13 +1,18 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment } from 'react'
+import { Helmet } from 'react-helmet'
 import AboutHeroSection from '../AboutPage/AboutHeroSection'
 import { MissionHeroObj } from './Data'
 
 const Mission = () => {
-  useEffect(() => {
-    document.title = 'Our Mission - Fire Safe Council'
-  }, [])
   return (
     <Fragment>
+      <Helmet>
+        <meta
+          name='description'
+          content='California Fire Safe Council’s mission is to be “California’s leader in community wildfire risk reduction and resiliency!'
+        />
+        <title>Our Mission - Fire Safe Council</title>
+      </Helmet>
       <AboutHeroSection {...MissionHeroObj} />
 
       <div className='about__mission-text-wrapper'>

@@ -5,10 +5,10 @@ export const WhoWeAreHeroObj = {
   topLine: 'Fire Safe Council',
   headline: 'Who We Are',
   description:
-    'California Fire Safe Council’s mission is to be “California’s leader in community wildfire risk reduction and resiliency!” We aim to foster a fire safe / fire wise region that has developed through an ongoing course of public education, training, and community collaboration in project support.',
+    'The Fire Safe Council of San Diego County was formed in 1997 as a nonprofit corporation (501c3) in the state of California through a collaboration between the Resource Conservation District of Greater San Diego County (RCD), along with local, state, federal, and tribal fire agency partners.',
   link: '',
   buttonLabel: '',
   imgStart: '',
   img: 'fsc-images/fsc-svg7.png',
   alt: 'Credit Card',
-};
+}

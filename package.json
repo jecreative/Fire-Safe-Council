@@ -10,6 +10,7 @@
     "moment": "^2.29.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-markdown": "^4.3.1",
     "react-marked": "^0.3.1",
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,5 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:1337"
+  "proxy": "http://localhost:1337",
+  "devDependencies": {
+    "react-snap": "^1.23.0"
+  }
 }
