@@ -1,6 +1,7 @@
+[postbuild]
+  command = "CI= npm run postbuild"
 [build]
-  functions = "functions"
-  publish = "build"
+  command = “CI= npm run build”
 [[redirects]]
   from = "/*"
   to = "/index.html"
