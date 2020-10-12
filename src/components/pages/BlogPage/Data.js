@@ -6,12 +6,12 @@ export const blogObjOne = {
   headline: 'News & Events',
   description:
     'One of forty-one local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires',
-  link: '/',
+  link: '/contact',
   buttonLabel: 'Get Started',
   imgStart: '',
   img: 'fsc-images/fsc-svg7.png',
   alt: 'Credit Card',
-};
+}
 
 export const blogObjTwo = {
   lightBg: true,
@@ -27,7 +27,7 @@ export const blogObjTwo = {
   imgStart: 'start',
   img: 'fsc-images/fsc-svg10.png',
   alt: 'Vault',
-};
+}
 
 export const blogCardOne = {
   cardTitle: 'University City',
@@ -36,7 +36,7 @@ export const blogCardOne = {
   buttonLabel: 'Read More',
   cardImg: 'fsc-images/fsc-svg2.png',
   alt: 'Credit Card',
-};
+}
 
 export const blogCardTwo = {
   cardTitle: 'University City',
@@ -45,7 +45,7 @@ export const blogCardTwo = {
   buttonLabel: 'Read More',
   cardImg: 'fsc-images/fsc-svg3.png',
   alt: 'Credit Card',
-};
+}
 
 export const blogCardThree = {
   cardTitle: 'University City',
@@ -54,4 +54,4 @@ export const blogCardThree = {
   buttonLabel: 'Read More',
   cardImg: 'fsc-images/fsc-svg4.png',
   alt: 'Credit Card',
-};
+}
