@@ -4,43 +4,43 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "72x72",
+      "sizes": "64x64",
       "type": "image/png"
     },
     {
       "src": "FSC_Icons/96x96.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "97x97"
     },
     {
       "src": "FSC_Icons/128x128.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "129x129"
     },
     {
       "src": "FSC_Icons/144x144.png",
       "type": "image/png",
-      "sizes": "144x144"
+      "sizes": "145x145"
     },
     {
       "src": "FSC_Icons/152x152.png",
       "type": "image/png",
-      "sizes": "152x152"
+      "sizes": "153x153"
     },
     {
       "src": "FSC_Icons/192x192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "193x193"
     },
     {
       "src": "FSC_Icons/384x384.png",
       "type": "image/png",
-      "sizes": "384x384"
+      "sizes": "385x385"
     },
     {
       "src": "FSC_Icons/512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "513x513"
     }
   ],
   "start_url": "/",
