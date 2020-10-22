@@ -50,8 +50,8 @@ const ContactForm = ({
                   }
                 >
                   {description}{' '}
-                  <a href='mailto: usfiresafecouncil@gmail.com'>
-                    usfiresafecouncil@gmail.com.
+                  <a href='mailto: ucfiresafecouncil@gmail.com'>
+                    ucfiresafecouncil@gmail.com.
                   </a>
                 </p>
                 <div className='form-container'>
