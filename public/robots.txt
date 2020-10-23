@@ -1,3 +1,19 @@
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
+Allow: /maps/api/js/
+Allow: /maps/api/js
+Allow: /maps/api/place/js/
+Allow: /maps/api/staticmap   
+Allow: /maps/api/streetview
+
 Disallow:
+
+User-agent: AdsBot-Google
+Allow: /maps/api/js/
+Allow: /maps/api/js
+Allow: /maps/api/place/js/
+Allow: /maps/api/staticmap
+Allow: /maps/api/streetview
+
+
