@@ -110,7 +110,7 @@ function Footer() {
             </Link>
           </div>
           <small className='website-rights'>
-            Jordan Esguerra Creative Media © 2020
+            © 2020 Jordan Esguerra Creative Media
           </small>
           <div className='social-icons'>
             <a
