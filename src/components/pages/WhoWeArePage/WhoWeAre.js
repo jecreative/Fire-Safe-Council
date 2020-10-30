@@ -40,20 +40,39 @@ const WhoWeAre = () => {
             the Fire Safe Council of San Diego County.
             <br />
             <br />
-            We are a member of the California Fire Safe Council and act as the
-            umbrella organization for the 41 locally-formed community Fire Safe
-            Councils within San Diego County. There are more community fire safe
-            councils in San Diego County than in any other county in California,
-            and we are hoping to grow this network even more.
+            The University City Fire Safe Council is a member of the California
+            Fire Safe Council and the Fire Safe Council of San Diego County. The
+            Resource Conservation District oversees the San Diego County Fire
+            Safe Councils as the umbrella organization for the nearly 50 local
+            Fire Safe Councils. For more information about the FSC of San Diego
+            County, visit{' '}
+            <a href='http://firesafesdcounty.org/'>
+              http://firesafesdcounty.org/
+            </a>
+            .
             <br /> <br />
             All Fire Safe Council members have the following common goals:
           </p>
           <ul className='goalsList'>
             <li>Promote Fire Safety Education</li>
             <li>Encourage Pre-Fire Management</li>
-            <li>Attend Meetings</li>
             <li>Participate in Fire Safe Council Programs and Activities</li>
           </ul>
+          <br />
+
+          <p>
+            For recent news and posts about the University City Fire Safe
+            Council as posted on the University City News site, visit{' '}
+            <a href='https://www.universitycitynews.org/category/sdfd/'>
+              https://www.universitycitynews.org/category/sdfd/
+            </a>
+            . For information about the history of the University City Fire Safe
+            Council, visit{' '}
+            <a href='https://www.universitycitynews.org/fire-safe-council-university-city/'>
+              https://www.universitycitynews.org/fire-safe-council-university-city/
+            </a>
+            .
+          </p>
         </div>
       </div>
     </Fragment>

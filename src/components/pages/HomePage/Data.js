@@ -5,7 +5,7 @@ export const homeHeroObj = {
   topLine: 'University City',
   headline: `Fire Safe Council`,
   description:
-    'One of forty-one local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires.',
+    'One of over forty local Fire Safe Councils working to educate local residents and promote safe practices for community wildfires.',
   link: '/contact',
   buttonLabel: 'Get Started',
   imgStart: '',

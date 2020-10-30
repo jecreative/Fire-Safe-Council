@@ -22,7 +22,6 @@ function Footer() {
             <h2>About Us</h2>
             <Link to='/mission'>Mission &amp; Vision</Link>
             <Link to='/who-we-are'>Who We Are</Link>
-            <Link to='/partners'>Partners</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
