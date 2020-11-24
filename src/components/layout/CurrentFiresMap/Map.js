@@ -12,11 +12,6 @@ const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null)
   const [locationInfoBox, setLocationInfoBox] = useState(false)
 
-  //* Event Handlers
-  if (eventData !== undefined && eventData.length !== 0) {
-    console.log(eventData)
-  }
-
   //* Marker
   const markers =
     eventData.length !== 0 &&
