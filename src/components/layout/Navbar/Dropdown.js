@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './Dropdown.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import './Dropdown.css'
+import { Link } from 'react-router-dom'
 
 function Dropdown() {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click)
 
   const MenuItems = [
     {
@@ -13,17 +13,18 @@ function Dropdown() {
       path: '/preparing-for-wildfire',
       cName: 'dropdown-link',
     },
+
     {
       title: "Today's Fire Weather",
       path: 'https://www.sdgeweather.com/',
       cName: 'dropdown-link',
     },
     {
-      title: 'Current Active Fires',
-      path: 'https://www.fire.ca.gov/incidents/',
+      title: 'Fire Incident Map',
+      path: '/fire-incidents',
       cName: 'dropdown-link',
     },
-  ];
+  ]
 
   return (
     <>
@@ -32,7 +33,7 @@ function Dropdown() {
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         {MenuItems.map((item, index) => {
-          const { title, path, cName } = item;
+          const { title, path, cName } = item
 
           return (
             <li key={index}>
@@ -47,8 +48,8 @@ function Dropdown() {
               ) : (
                 <a
                   href={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className={cName}
                   onClick={() => setClick(false)}
                 >
@@ -56,11 +57,11 @@ function Dropdown() {
                 </a>
               )}
             </li>
-          );
+          )
         })}
       </ul>
     </>
-  );
+  )
 }
 
-export default Dropdown;
+export default Dropdown

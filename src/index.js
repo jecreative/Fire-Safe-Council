@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 
-// import { hydrate, render } from 'react-dom'
+// Redux Store
+import store from './redux/store'
+import { Provider } from 'react-redux'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-
-// const rootElement = document.getElementById('root')
-// if (rootElement.hasChildNodes()) {
-//   hydrate(<App />, rootElement)
-// } else {
-//   render(<App />, rootElement)
-// }
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)

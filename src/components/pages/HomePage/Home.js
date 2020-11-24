@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import HeroSection from '../../layout/Hero/HeroSection'
 import MainHeroSection from './MainHeroSection'
 import FSCMap from '../../layout/FSCMap/FSCMap'
+import Maps from '../../layout/Maps/Maps'
 import ContactForm from '../../layout/ContactForm/ContactForm'
 import {
   homeHeroObj,
@@ -28,8 +29,9 @@ function Home() {
       <FSCMap {...homeMapObj} />
 
       <HeroSection {...homeNewsObj} />
-      <HeroSection {...homeLearnMoreObj} />
+      <Maps />
       <HeroSection {...homeCommunityObj} />
+      <HeroSection {...homeLearnMoreObj} />
       {/* <FeaturedHighlights /> */}
 
       <ContactForm {...homeContactObj} />

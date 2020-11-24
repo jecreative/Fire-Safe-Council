@@ -46,13 +46,7 @@ function Footer() {
             >
               Today's Fire Weather
             </a>
-            <a
-              href='https://www.fire.ca.gov/incidents/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Current Active Fires
-            </a>
+            <Link to='/fire-incidents'>Fire Incident Map</Link>
             <a
               href='https://fsc-backend.herokuapp.com/admin/auth/login'
               target='_blank'

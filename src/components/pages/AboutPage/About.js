@@ -1,12 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import AboutHeroSection from './AboutHeroSection'
-import {
-  aboutHeroObj,
-  aboutMissionObj,
-  aboutWhoWeAreObj,
-  aboutFundingObj,
-} from './Data'
+import { aboutHeroObj, aboutMissionObj, aboutWhoWeAreObj } from './Data'
 import './AboutHeroSection.css'
 
 function About() {
@@ -26,7 +21,6 @@ function About() {
       <AboutHeroSection {...aboutHeroObj} />
       <AboutHeroSection {...aboutMissionObj} />
       <AboutHeroSection {...aboutWhoWeAreObj} />
-      <AboutHeroSection {...aboutFundingObj} />
     </Fragment>
   )
 }

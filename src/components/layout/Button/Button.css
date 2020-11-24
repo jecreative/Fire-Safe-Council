@@ -57,13 +57,13 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
-  color: #fff;
+  background: #a71e2d;
+  color: white !important;
 }
 
 .btn--wide:hover {
   color: #fff;
-  background-color: #A71E2D;
+  background-color: #a71e2d;
   transition: all 0.2s ease-out;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .red {
-  background-color: #A71E2D;
+  background-color: #a71e2d;
   color: #fff;
   border: none;
 }
@@ -95,10 +95,8 @@
   border: none;
 }
 
-
-
 .primary:hover {
-  background-color: #FFAE27;
+  background-color: #ffae27;
   color: #fff;
   border: none;
 }
@@ -110,5 +108,5 @@
 }
 
 .green:hover {
-  background-color: #A71E2D;
+  background-color: #a71e2d;
 }

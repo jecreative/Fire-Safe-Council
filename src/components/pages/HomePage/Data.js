@@ -75,9 +75,9 @@ export const homeCommunityObj = {
 }
 
 export const homeContactObj = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'Get In Touch',
   headline: '',
   description:

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 import { connect } from 'react-redux'
 import ReactMarkdown from 'react-markdown/with-html'
-import { clearCurrent, getPosts } from '../../../actions/postActions'
+import { clearCurrent, getPosts } from '../../../redux/actions/postActions'
 
 const PostDetailPage = ({
   post: { current, loading },

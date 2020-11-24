@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { getPosts, setCurrent } from '../../../actions/postActions'
+import { getPosts, setCurrent } from '../../../redux/actions/postActions'
 
 import Spinner from '../Spinner/Spinner'
 
