@@ -1,6 +1,11 @@
 import React, { Fragment, useEffect } from 'react'
 import PreparednessHeroSection from './PreparednessHero'
-import { resourcesObjOne, resourcesObjTwo, resourcesObjThree } from './Data'
+import {
+  resourcesObjOne,
+  resourcesObjTwo,
+  resourcesObjThree,
+  resourcesObjFour,
+} from './Data'
 import { Helmet } from 'react-helmet'
 
 function Resources() {
@@ -17,8 +22,10 @@ function Resources() {
         />
       </Helmet>
       <PreparednessHeroSection {...resourcesObjOne} />
-      <PreparednessHeroSection {...resourcesObjTwo} />
+
+      <PreparednessHeroSection {...resourcesObjFour} />
       <PreparednessHeroSection {...resourcesObjThree} />
+      <PreparednessHeroSection {...resourcesObjTwo} />
     </Fragment>
   )
 }

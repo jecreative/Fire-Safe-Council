@@ -12,7 +12,7 @@ export const resourcesObjOne = {
   img: 'fsc-images/fsc-svg6.png',
   alt: 'Fire Safe Resources',
   link: '/preparing-for-wildfire',
-};
+}
 
 export const resourcesObjTwo = {
   lightBg: true,
@@ -20,14 +20,13 @@ export const resourcesObjTwo = {
   lightTextDesc: false,
   topLine: "Today's Fire Weather",
   headline: "Stay informed with SDG&E's Fire Weather System",
-  description:
-    'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+  description: '',
   link: 'https://www.sdgeweather.com/',
-  buttonLabel: 'Get Started',
+  buttonLabel: 'Visit Site',
   imgStart: 'start',
   img: 'fsc-images/fsc-svg3.png',
   alt: 'Fire Safe Resources',
-};
+}
 
 export const resourcesObjThree = {
   lightBg: false,
@@ -42,7 +41,22 @@ export const resourcesObjThree = {
   imgStart: '',
   img: 'fsc-images/fsc-svg4.png',
   alt: 'Fire Safe Resources',
-};
+}
+
+export const resourcesObjFour = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Fire Incident Map',
+  headline: 'NASA EONET Wildfire Incident Database',
+  description:
+    'Wildfire information readily available from the NASA Earth Observatory Natural Event Tracker (EONET).',
+  link: '/fire-incidents',
+  buttonLabel: 'View Map',
+  imgStart: 'start',
+  img: 'fsc-images/fsc-svg-15.png',
+  alt: 'Fire Safe Resources',
+}
 
 // WildFire Prepardness
 export const prepObjOne = {
@@ -58,7 +72,7 @@ export const prepObjOne = {
   img: 'fsc-images/fsc-svg2.png',
   alt: 'Fire Safe Resources',
   link: '/preparing-for-wildfire',
-};
+}
 
 export const prepObjTwo = {
   lightBg: true,
@@ -72,4 +86,4 @@ export const prepObjTwo = {
   img: 'fsc-images/fsc-svg4.png',
   alt: 'Fire Safe Resources',
   link: '/wildfire-prepardness',
-};
+}
